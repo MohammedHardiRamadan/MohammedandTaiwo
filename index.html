@@ -9,25 +9,25 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header>
-      <h1>freecodecamp Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform</p>
+      <h1 id="title">freecodecamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
     <main>
-      <form action="">
+      <form id="survey-form" >
         <div class="form-control">
-          <label for="name">Name</label>
-          <input type="text" placeholder="Enter your name">
+          <label id="name-label" for="name">Name</label>
+          <input required id="name" type="text" placeholder="Enter your name">
         </div>
         <div class="form-control">
-          <label for="name">Email</label>
-          <input type="email" placeholder="Enter your email">
+          <label for="name" id="email-label">Email</label>
+          <input required id="email" type="email" placeholder="Enter your email">
         </div>
         <div class="form-control">
-          <label for="name">Age</label>
-          <input type="text" placeholder="Age">
+          <label for="name" id="number-label">Age</label>
+          <input min="18" max="100" id="number" type="number" placeholder="Age">
         </div>
         <div class="form-control">
-          <select value="Select current role">
+          <select id="dropdown" value="Select current role">
             <option name="Student" id="">select an option</option>
             <option name="Student" id="">Student</option>
             <option name="job" id="">Full time job</option>
@@ -39,21 +39,21 @@
         <div class="form-c0ntrol">
           <label for="friend">Would you recommend freecodecamp to your friend</label>
           <div class="radio">
-            <input type="radio">
+            <input name="nameofradio" value="definitely" type="radio">
             <label for="definitely">Definitely</label>
           </div>
           <div class="radio">
-            <input type="radio">
+            <input name="nameofradio" value="maybe" type="radio">
             <label for="maybe">Maybe</label>
           </div>
           <div class="radio">
-            <input type="radio">
+            <input name="nameofradio" value="notsure" type="radio">
             <label for="Not-sure">Not-sure</label>
           </div>
         </div>
         <div class="form-control">
           <label for="favorite">What is your favorite feature of freeCodeCamp</label>
-          <select value="favorite">
+          <select id="dropdown" value="favorite">
             <option name="Challenges" id="">Select an option</option>
             <option name="Challenges" id="">Challenges</option>
             <option name="Projects id=">Projects</option>
@@ -61,7 +61,60 @@
             <option name="open-source" id="">Open source</option>
           </option>
         </div>
-        
+        <div class="form-control">
+          <label for="">What would you like to see improved? (check all that apply)</label>
+          <div class="checkbox">
+            <input value="frontendproject" type="checkbox">
+            <label for="">Front-end Projects</label>
+          </div>
+          <div class="checkbox">
+            <input value="backendproject" type="checkbox">
+            <label for="">Back-end Projects</label>
+          </div>
+          <div class="checkbox">
+            <input value="datavisualization" type="checkbox">
+            <label for="">Data Visualization</label>
+          </div>
+          <div class="checkbox">
+            <input value="challenges" type="checkbox">
+            <label for="">Challenges</label>
+          </div>
+          <div class="checkbox">
+            <input value="opensourcecommunity" type="checkbox">
+            <label for="">Open Source Community</label>
+          </div>
+          <div class="checkbox">
+            <input value="gitterhelprooms" type="checkbox">
+            <label for="">Gitter help rooms</label>
+          </div>
+          <div class="checkbox">
+            <input value="videos" type="checkbox">
+            <label for="">videos</label>
+          </div>
+          <div class="checkbox">
+            <input value="citymeetups" type="checkbox">
+            <label for="">City Meetups</label>
+          </div>
+          <div class="checkbox">
+            <input value="wiki" type="checkbox">
+            <label for="">Wiki</label>
+          </div>
+          <div class="checkbox">
+            <input value="forum" type="checkbox">
+            <label for="">Forum</label>
+          </div>
+          <div class="checkbox">
+            <input value="additionalcourses" type="checkbox">
+            <label for="">Additional Courses</label>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="">Any comment or suggestions</label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+        </div>
+        <div class="form-control">
+          <button id="submit" type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <!--
